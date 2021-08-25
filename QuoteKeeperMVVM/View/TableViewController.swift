@@ -28,13 +28,13 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "quoteCell", for: indexPath)
         
-        cell.textLabel?.text = "hello world"
+        cell.textLabel?.text = "hey 🕷⚡️"
 
         // Configure the cell...
 

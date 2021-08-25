@@ -58,13 +58,21 @@
 			children = (
 				ACE14DF026D6EA2800FFC0B2 /* AppDelegate.swift */,
 				ACE14DF226D6EA2800FFC0B2 /* SceneDelegate.swift */,
-				ACE14DF626D6EA2800FFC0B2 /* Main.storyboard */,
-				ACE14E0426D6EB2600FFC0B2 /* TableViewController.swift */,
+				ACE14E0626D6ED4F00FFC0B2 /* View */,
 				ACE14DF926D6EA2A00FFC0B2 /* Assets.xcassets */,
 				ACE14DFB26D6EA2A00FFC0B2 /* LaunchScreen.storyboard */,
 				ACE14DFE26D6EA2A00FFC0B2 /* Info.plist */,
 			);
 			path = QuoteKeeperMVVM;
+			sourceTree = "<group>";
+		};
+		ACE14E0626D6ED4F00FFC0B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACE14E0426D6EB2600FFC0B2 /* TableViewController.swift */,
+				ACE14DF626D6EA2800FFC0B2 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
