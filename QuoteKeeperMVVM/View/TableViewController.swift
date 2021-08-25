@@ -8,9 +8,13 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    let quotes = QuoteViewModel().getQuotes()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Quote Keeper"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -28,13 +32,13 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return quotes.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "quoteCell", for: indexPath)
         
-        cell.textLabel?.text = "hey 🕷⚡️"
+        cell.textLabel?.text = quotes[indexPath.row].text
 
         // Configure the cell...
 
